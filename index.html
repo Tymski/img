@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Repository</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #e8e8e8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #00d9ff, #a855f7, #ff6b9d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #8892b0;
+            margin-bottom: 40px;
+            font-size: 0.95rem;
+        }
+
+        .file-list {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+
+        .file-item {
+            display: flex;
+            align-items: center;
+            padding: 16px 24px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.2s ease;
+            gap: 16px;
+        }
+
+        .file-item:last-child {
+            border-bottom: none;
+        }
+
+        .file-item:hover {
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .file-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .file-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .file-name {
+            font-weight: 500;
+            color: #f0f0f0;
+            margin-bottom: 4px;
+            word-break: break-all;
+        }
+
+        .file-path {
+            font-size: 0.8rem;
+            color: #64748b;
+            font-family: 'Consolas', 'Monaco', monospace;
+            word-break: break-all;
+        }
+
+        .copy-btn {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .copy-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4);
+        }
+
+        .copy-btn:active {
+            transform: translateY(0);
+        }
+
+        .copy-btn.copied {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+
+        .folder-header {
+            background: rgba(139, 92, 246, 0.1);
+            padding: 12px 24px;
+            font-weight: 600;
+            color: #a78bfa;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+        }
+
+        .stats {
+            text-align: center;
+            margin-top: 30px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #8892b0;
+        }
+
+        .error {
+            text-align: center;
+            padding: 40px;
+            color: #f87171;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Image Repository</h1>
+        <p class="subtitle">Click to copy the URL to clipboard</p>
+        <div class="file-list" id="fileList">
+            <div class="loading">Loading images...</div>
+        </div>
+        <div class="stats" id="stats"></div>
+    </div>
+    <script>
+        function getIcon(extension) {
+            const ext = extension.toLowerCase();
+            if (ext === '.gif') return '🎬';
+            if (ext === '.svg') return '📐';
+            if (ext === '.ico') return '⭐';
+            return '🖼️';
+        }
+
+        function copyToClipboard(btn, url) {
+            navigator.clipboard.writeText(url).then(function () {
+                btn.textContent = 'Copied!';
+                btn.classList.add('copied');
+                setTimeout(function () {
+                    btn.textContent = 'Copy URL';
+                    btn.classList.remove('copied');
+                }, 2000);
+            });
+        }
+
+        function renderImages(data) {
+            const fileList = document.getElementById('fileList');
+            const stats = document.getElementById('stats');
+
+            // Group images by folder
+            const folders = {};
+            data.images.forEach(img => {
+                const folder = img.folder || 'Root';
+                if (!folders[folder]) folders[folder] = [];
+                folders[folder].push(img);
+            });
+
+            let html = '';
+
+            // Sort folders (Root first, then alphabetically)
+            const sortedFolders = Object.keys(folders).sort((a, b) => {
+                if (a === 'Root') return -1;
+                if (b === 'Root') return 1;
+                return a.localeCompare(b);
+            });
+
+            sortedFolders.forEach(folder => {
+                html += `<div class="folder-header">📁 ${folder}</div>`;
+
+                folders[folder].forEach(img => {
+                    const fullUrl = data.baseUrl + img.path;
+                    const icon = getIcon(img.extension);
+
+                    html += `
+                        <div class="file-item">
+                            <div class="file-icon">${icon}</div>
+                            <div class="file-info">
+                                <div class="file-name">${img.filename}</div>
+                                <div class="file-path">${fullUrl}</div>
+                            </div>
+                            <button class="copy-btn" onclick="copyToClipboard(this, '${fullUrl}')">Copy URL</button>
+                        </div>
+                    `;
+                });
+            });
+
+            fileList.innerHTML = html;
+            stats.textContent = `Total: ${data.images.length} images`;
+        }
+
+        // Load the JSON data
+        fetch('images.json')
+            .then(response => {
+                if (!response.ok) throw new Error('Failed to load images.json');
+                return response.json();
+            })
+            .then(data => renderImages(data))
+            .catch(error => {
+                document.getElementById('fileList').innerHTML =
+                    `<div class="error">Error loading images: ${error.message}<br>Run build.bat to generate images.json</div>`;
+            });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,291 @@
+{ 
+  "baseUrl": "https://img.tymski.pl/", 
+  "images": [ 
+    { 
+      "filename": "AttackVectorPlugin.png", 
+      "path": "AttackVectorPlugin.png", 
+      "folder": "", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "AttackVectorPluginThumb.png", 
+      "path": "AttackVectorPluginThumb.png", 
+      "folder": "", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "FilesConcatenator.png", 
+      "path": "FilesConcatenator.png", 
+      "folder": "", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "FilesConcatenatorThumb.png", 
+      "path": "FilesConcatenatorThumb.png", 
+      "folder": "", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "GamePage.png", 
+      "path": "GamePage.png", 
+      "folder": "", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "GamePageThumb.png", 
+      "path": "GamePageThumb.png", 
+      "folder": "", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Lissajous_Figures_byVhastorga_CCBY4.png", 
+      "path": "Lissajous_Figures_byVhastorga_CCBY4.png", 
+      "folder": "", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "MinesweeperAdventure.png", 
+      "path": "MinesweeperAdventure.png", 
+      "folder": "", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "MinesweeperAdventureThumb.png", 
+      "path": "MinesweeperAdventureThumb.png", 
+      "folder": "", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "PasswordGenerator.png", 
+      "path": "PasswordGenerator.png", 
+      "folder": "", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "PasswordGeneratorThumb.png", 
+      "path": "PasswordGeneratorThumb.png", 
+      "folder": "", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "T-guy.png", 
+      "path": "T-guy.png", 
+      "folder": "", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "TileSlidingPuzzleGame.png", 
+      "path": "TileSlidingPuzzleGame.png", 
+      "folder": "", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "TileSlidingPuzzleGameThumb.png", 
+      "path": "TileSlidingPuzzleGameThumb.png", 
+      "folder": "", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "LissajousCurveColored.jpg", 
+      "path": "LissajousCurveColored.jpg", 
+      "folder": "", 
+      "extension": ".jpg" 
+    } 
+    , 
+    { 
+      "filename": "LissajousCurveColoredThumb.jpg", 
+      "path": "LissajousCurveColoredThumb.jpg", 
+      "folder": "", 
+      "extension": ".jpg" 
+    } 
+    , 
+    { 
+      "filename": "Tymski.pl.jpeg", 
+      "path": "Tymski.pl.jpeg", 
+      "folder": "", 
+      "extension": ".jpeg" 
+    } 
+    , 
+    { 
+      "filename": "Hitori 5x5 level select dark mode.png", 
+      "path": "Hitori/Hitori 5x5 level select dark mode.png", 
+      "folder": "Hitori", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Hitori 8x8 level 307 dark mode.png", 
+      "path": "Hitori/Hitori 8x8 level 307 dark mode.png", 
+      "folder": "Hitori", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Hitori 8x8 level 307 light mode.png", 
+      "path": "Hitori/Hitori 8x8 level 307 light mode.png", 
+      "folder": "Hitori", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Hitori gameplay screen.png", 
+      "path": "Hitori/Hitori gameplay screen.png", 
+      "folder": "Hitori", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Hitori Settings Menu.png", 
+      "path": "Hitori/Hitori Settings Menu.png", 
+      "folder": "Hitori", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Hitori Victory Popup Level 1.png", 
+      "path": "Hitori/Hitori Victory Popup Level 1.png", 
+      "folder": "Hitori", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "2000.png", 
+      "path": "PlayMyLevel/2000.png", 
+      "folder": "PlayMyLevel", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "2000x500.png", 
+      "path": "PlayMyLevel/2000x500.png", 
+      "folder": "PlayMyLevel", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "BigLevel.png", 
+      "path": "PlayMyLevel/BigLevel.png", 
+      "folder": "PlayMyLevel", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Chilling.png", 
+      "path": "PlayMyLevel/Chilling.png", 
+      "folder": "PlayMyLevel", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "FrogNinjaInCastle.png", 
+      "path": "PlayMyLevel/FrogNinjaInCastle.png", 
+      "folder": "PlayMyLevel", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "GhostCastle.png", 
+      "path": "PlayMyLevel/GhostCastle.png", 
+      "folder": "PlayMyLevel", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "MenuGamepadSettings.png", 
+      "path": "PlayMyLevel/MenuGamepadSettings.png", 
+      "folder": "PlayMyLevel", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "MenuLevelSelect.png", 
+      "path": "PlayMyLevel/MenuLevelSelect.png", 
+      "folder": "PlayMyLevel", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "PlayMyLevelMenu.png", 
+      "path": "PlayMyLevel/PlayMyLevelMenu.png", 
+      "folder": "PlayMyLevel", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "RocketLevel.png", 
+      "path": "PlayMyLevel/RocketLevel.png", 
+      "folder": "PlayMyLevel", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "SerratedDungeon.png", 
+      "path": "PlayMyLevel/SerratedDungeon.png", 
+      "folder": "PlayMyLevel", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "SwapAndCamera.png", 
+      "path": "PlayMyLevel/SwapAndCamera.png", 
+      "folder": "PlayMyLevel", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "SwapAndCamera2.png", 
+      "path": "PlayMyLevel/SwapAndCamera2.png", 
+      "folder": "PlayMyLevel", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "TutorialPC.png", 
+      "path": "PlayMyLevel/TutorialPC.png", 
+      "folder": "PlayMyLevel", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Fireball.gif", 
+      "path": "PlayMyLevel/Fireball.gif", 
+      "folder": "PlayMyLevel", 
+      "extension": ".gif" 
+    } 
+    , 
+    { 
+      "filename": "PowerUps.gif", 
+      "path": "PlayMyLevel/PowerUps.gif", 
+      "folder": "PlayMyLevel", 
+      "extension": ".gif" 
+    } 
+    , 
+    { 
+      "filename": "SwapPositions.gif", 
+      "path": "PlayMyLevel/SwapPositions.gif", 
+      "folder": "PlayMyLevel", 
+      "extension": ".gif" 
+    } 
+    , 
+    { 
+      "filename": "SwordSwing.gif", 
+      "path": "PlayMyLevel/SwordSwing.gif", 
+      "folder": "PlayMyLevel", 
+      "extension": ".gif" 
+    } 
+  ] 
+} 
