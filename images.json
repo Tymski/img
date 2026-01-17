@@ -163,6 +163,13 @@
     } 
     , 
     { 
+      "filename": "Hitori Header.webp", 
+      "path": "Hitori/Hitori Header.webp", 
+      "folder": "Hitori", 
+      "extension": ".webp" 
+    } 
+    , 
+    { 
       "filename": "2000.png", 
       "path": "PlayMyLevel/2000.png", 
       "folder": "PlayMyLevel", 
