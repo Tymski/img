@@ -163,6 +163,13 @@
     } 
     , 
     { 
+      "filename": "HitoriCover.png", 
+      "path": "Hitori/HitoriCover.png", 
+      "folder": "Hitori", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
       "filename": "Hitori Header.webp", 
       "path": "Hitori/Hitori Header.webp", 
       "folder": "Hitori", 
