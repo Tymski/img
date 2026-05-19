@@ -16,6 +16,13 @@
     } 
     , 
     { 
+      "filename": "Facepalm.png", 
+      "path": "Facepalm.png", 
+      "folder": "", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
       "filename": "FilesConcatenator.png", 
       "path": "FilesConcatenator.png", 
       "folder": "", 
@@ -39,6 +46,13 @@
     { 
       "filename": "GamePageThumb.png", 
       "path": "GamePageThumb.png", 
+      "folder": "", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "HelloWorld.png", 
+      "path": "HelloWorld.png", 
       "folder": "", 
       "extension": ".png" 
     } 
@@ -74,6 +88,13 @@
     { 
       "filename": "PasswordGeneratorThumb.png", 
       "path": "PasswordGeneratorThumb.png", 
+      "folder": "", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "pngquant desktop shortcut.png", 
+      "path": "pngquant desktop shortcut.png", 
       "folder": "", 
       "extension": ".png" 
     } 
@@ -118,6 +139,62 @@
       "path": "Tymski.pl.jpeg", 
       "folder": "", 
       "extension": ".jpeg" 
+    } 
+    , 
+    { 
+      "filename": "Disconnect Example Level.png", 
+      "path": "Disconnect/Disconnect Example Level.png", 
+      "folder": "Disconnect", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Disconnect Large Level.png", 
+      "path": "Disconnect/Disconnect Large Level.png", 
+      "folder": "Disconnect", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Disconnect Level 41.png", 
+      "path": "Disconnect/Disconnect Level 41.png", 
+      "folder": "Disconnect", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Disconnect Level Finished.png", 
+      "path": "Disconnect/Disconnect Level Finished.png", 
+      "folder": "Disconnect", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Disconnect Lost Game.png", 
+      "path": "Disconnect/Disconnect Lost Game.png", 
+      "folder": "Disconnect", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Disconnect Main Menu.png", 
+      "path": "Disconnect/Disconnect Main Menu.png", 
+      "folder": "Disconnect", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Disconnect Header.webp", 
+      "path": "Disconnect/Disconnect Header.webp", 
+      "folder": "Disconnect", 
+      "extension": ".webp" 
+    } 
+    , 
+    { 
+      "filename": "DisconnectPuzzleCover.webp", 
+      "path": "Disconnect/DisconnectPuzzleCover.webp", 
+      "folder": "Disconnect", 
+      "extension": ".webp" 
     } 
     , 
     { 
@@ -228,6 +305,13 @@
     { 
       "filename": "MenuLevelSelect.png", 
       "path": "PlayMyLevel/MenuLevelSelect.png", 
+      "folder": "PlayMyLevel", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "PlayMyLevelBanner.png", 
+      "path": "PlayMyLevel/PlayMyLevelBanner.png", 
       "folder": "PlayMyLevel", 
       "extension": ".png" 
     } 
