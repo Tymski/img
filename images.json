@@ -51,6 +51,20 @@
     } 
     , 
     { 
+      "filename": "games-section-tymski.pl.png", 
+      "path": "games-section-tymski.pl.png", 
+      "folder": "", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "games-section-tymski.plThumb.png", 
+      "path": "games-section-tymski.plThumb.png", 
+      "folder": "", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
       "filename": "HelloWorld.png", 
       "path": "HelloWorld.png", 
       "folder": "", 
