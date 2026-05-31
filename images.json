@@ -93,6 +93,13 @@
     } 
     , 
     { 
+      "filename": "png reduce size.png", 
+      "path": "png reduce size.png", 
+      "folder": "", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
       "filename": "pngquant desktop shortcut.png", 
       "path": "pngquant desktop shortcut.png", 
       "folder": "", 
@@ -142,8 +149,57 @@
     } 
     , 
     { 
+      "filename": "Big Brain Dungeon Intro Text.png", 
+      "path": "BigBrainDungeon/Big Brain Dungeon Intro Text.png", 
+      "folder": "BigBrainDungeon", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Big Brain Dungeon Puzzle Example.png", 
+      "path": "BigBrainDungeon/Big Brain Dungeon Puzzle Example.png", 
+      "folder": "BigBrainDungeon", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Big Brain Dungeon Reference Puzzle.png", 
+      "path": "BigBrainDungeon/Big Brain Dungeon Reference Puzzle.png", 
+      "folder": "BigBrainDungeon", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Big Brain Dungeon room with 4 doors.png", 
+      "path": "BigBrainDungeon/Big Brain Dungeon room with 4 doors.png", 
+      "folder": "BigBrainDungeon", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "BigBrainDungeon SmallRoom.png", 
+      "path": "BigBrainDungeon/BigBrainDungeon SmallRoom.png", 
+      "folder": "BigBrainDungeon", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "BigBrainDungeon.png", 
+      "path": "BigBrainDungeon/BigBrainDungeon.png", 
+      "folder": "BigBrainDungeon", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
       "filename": "Disconnect Example Level.png", 
       "path": "Disconnect/Disconnect Example Level.png", 
+      "folder": "Disconnect", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Disconnect Game Title.png", 
+      "path": "Disconnect/Disconnect Game Title.png", 
       "folder": "Disconnect", 
       "extension": ".png" 
     } 
