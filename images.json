@@ -5,567 +5,820 @@
       "filename": "AttackVectorPlugin.png", 
       "path": "AttackVectorPlugin.png", 
       "folder": "", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 11967, 
+      "width": 894, 
+      "height": 565 
     } 
     , 
     { 
       "filename": "AttackVectorPluginThumb.png", 
       "path": "AttackVectorPluginThumb.png", 
       "folder": "", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 5438, 
+      "width": 300, 
+      "height": 189 
     } 
     , 
     { 
       "filename": "Facepalm.png", 
       "path": "Facepalm.png", 
       "folder": "", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 1432, 
+      "width": 152, 
+      "height": 165 
     } 
     , 
     { 
       "filename": "FilesConcatenator.png", 
       "path": "FilesConcatenator.png", 
       "folder": "", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 30916, 
+      "width": 1089, 
+      "height": 902 
     } 
     , 
     { 
       "filename": "FilesConcatenatorThumb.png", 
       "path": "FilesConcatenatorThumb.png", 
       "folder": "", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 10108, 
+      "width": 300, 
+      "height": 248 
     } 
     , 
     { 
       "filename": "GamePage.png", 
       "path": "GamePage.png", 
       "folder": "", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 145288, 
+      "width": 1000, 
+      "height": 893 
     } 
     , 
     { 
       "filename": "GamePageThumb.png", 
       "path": "GamePageThumb.png", 
       "folder": "", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 23801, 
+      "width": 300, 
+      "height": 268 
     } 
     , 
     { 
       "filename": "games-section-tymski.pl.png", 
       "path": "games-section-tymski.pl.png", 
       "folder": "", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 149317, 
+      "width": 928, 
+      "height": 832 
     } 
     , 
     { 
       "filename": "games-section-tymski.plThumb.png", 
       "path": "games-section-tymski.plThumb.png", 
       "folder": "", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 27871, 
+      "width": 300, 
+      "height": 269 
     } 
     , 
     { 
       "filename": "HelloWorld.png", 
       "path": "HelloWorld.png", 
       "folder": "", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 2338, 
+      "width": 282, 
+      "height": 231 
     } 
     , 
     { 
       "filename": "Lissajous_Figures_byVhastorga_CCBY4.png", 
       "path": "Lissajous_Figures_byVhastorga_CCBY4.png", 
       "folder": "", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 57803, 
+      "width": 698, 
+      "height": 1086 
     } 
     , 
     { 
       "filename": "MinesweeperAdventure.png", 
       "path": "MinesweeperAdventure.png", 
       "folder": "", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 32244, 
+      "width": 732, 
+      "height": 1128 
     } 
     , 
     { 
       "filename": "MinesweeperAdventureThumb.png", 
       "path": "MinesweeperAdventureThumb.png", 
       "folder": "", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 13692, 
+      "width": 194, 
+      "height": 300 
     } 
     , 
     { 
       "filename": "PasswordGenerator.png", 
       "path": "PasswordGenerator.png", 
       "folder": "", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 33459, 
+      "width": 647, 
+      "height": 800 
     } 
     , 
     { 
       "filename": "PasswordGeneratorThumb.png", 
       "path": "PasswordGeneratorThumb.png", 
       "folder": "", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 7837, 
+      "width": 202, 
+      "height": 250 
     } 
     , 
     { 
       "filename": "png reduce size.png", 
       "path": "png reduce size.png", 
       "folder": "", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 21051, 
+      "width": 300, 
+      "height": 200 
     } 
     , 
     { 
       "filename": "pngquant desktop shortcut.png", 
       "path": "pngquant desktop shortcut.png", 
       "folder": "", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 1208, 
+      "width": 140, 
+      "height": 107 
     } 
     , 
     { 
       "filename": "T-guy.png", 
       "path": "T-guy.png", 
       "folder": "", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 215, 
+      "width": 16, 
+      "height": 16 
     } 
     , 
     { 
       "filename": "TileSlidingPuzzleGame.png", 
       "path": "TileSlidingPuzzleGame.png", 
       "folder": "", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 32915, 
+      "width": 623, 
+      "height": 1000 
     } 
     , 
     { 
       "filename": "TileSlidingPuzzleGameThumb.png", 
       "path": "TileSlidingPuzzleGameThumb.png", 
       "folder": "", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 9815, 
+      "width": 187, 
+      "height": 300 
     } 
     , 
     { 
       "filename": "LissajousCurveColored.jpg", 
       "path": "LissajousCurveColored.jpg", 
       "folder": "", 
-      "extension": ".jpg" 
+      "extension": ".jpg", 
+      "size": 165025, 
+      "width": 700, 
+      "height": 627 
     } 
     , 
     { 
       "filename": "LissajousCurveColoredThumb.jpg", 
       "path": "LissajousCurveColoredThumb.jpg", 
       "folder": "", 
-      "extension": ".jpg" 
+      "extension": ".jpg", 
+      "size": 22113, 
+      "width": 250, 
+      "height": 224 
     } 
     , 
     { 
       "filename": "Tymski.pl.jpeg", 
       "path": "Tymski.pl.jpeg", 
       "folder": "", 
-      "extension": ".jpeg" 
+      "extension": ".jpeg", 
+      "size": 2648, 
+      "width": 64, 
+      "height": 64 
     } 
     , 
     { 
       "filename": "Big Brain Dungeon Intro Text.png", 
       "path": "BigBrainDungeon/Big Brain Dungeon Intro Text.png", 
       "folder": "BigBrainDungeon", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 21120, 
+      "width": 2560, 
+      "height": 1440 
     } 
     , 
     { 
       "filename": "Big Brain Dungeon Puzzle Example.png", 
       "path": "BigBrainDungeon/Big Brain Dungeon Puzzle Example.png", 
       "folder": "BigBrainDungeon", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 35665, 
+      "width": 2560, 
+      "height": 1440 
     } 
     , 
     { 
       "filename": "Big Brain Dungeon Reference Puzzle.png", 
       "path": "BigBrainDungeon/Big Brain Dungeon Reference Puzzle.png", 
       "folder": "BigBrainDungeon", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 41993, 
+      "width": 2560, 
+      "height": 1440 
     } 
     , 
     { 
       "filename": "Big Brain Dungeon room with 4 doors.png", 
       "path": "BigBrainDungeon/Big Brain Dungeon room with 4 doors.png", 
       "folder": "BigBrainDungeon", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 95052, 
+      "width": 2560, 
+      "height": 1440 
     } 
     , 
     { 
       "filename": "BigBrainDungeon SmallRoom.png", 
       "path": "BigBrainDungeon/BigBrainDungeon SmallRoom.png", 
       "folder": "BigBrainDungeon", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 35972, 
+      "width": 2560, 
+      "height": 1440 
     } 
     , 
     { 
       "filename": "BigBrainDungeon.png", 
       "path": "BigBrainDungeon/BigBrainDungeon.png", 
       "folder": "BigBrainDungeon", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 10346, 
+      "width": 315, 
+      "height": 250 
     } 
     , 
     { 
       "filename": "Disconnect Example Level.png", 
       "path": "Disconnect/Disconnect Example Level.png", 
       "folder": "Disconnect", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 144549, 
+      "width": 1080, 
+      "height": 1920 
     } 
     , 
     { 
       "filename": "Disconnect Game Title.png", 
       "path": "Disconnect/Disconnect Game Title.png", 
       "folder": "Disconnect", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 78762, 
+      "width": 630, 
+      "height": 500 
     } 
     , 
     { 
       "filename": "Disconnect Large Level.png", 
       "path": "Disconnect/Disconnect Large Level.png", 
       "folder": "Disconnect", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 164703, 
+      "width": 1080, 
+      "height": 1920 
     } 
     , 
     { 
       "filename": "Disconnect Level 41.png", 
       "path": "Disconnect/Disconnect Level 41.png", 
       "folder": "Disconnect", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 97627, 
+      "width": 1080, 
+      "height": 1920 
     } 
     , 
     { 
       "filename": "Disconnect Level Finished.png", 
       "path": "Disconnect/Disconnect Level Finished.png", 
       "folder": "Disconnect", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 121015, 
+      "width": 1080, 
+      "height": 1920 
     } 
     , 
     { 
       "filename": "Disconnect Lost Game.png", 
       "path": "Disconnect/Disconnect Lost Game.png", 
       "folder": "Disconnect", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 182189, 
+      "width": 1080, 
+      "height": 1920 
     } 
     , 
     { 
       "filename": "Disconnect Main Menu.png", 
       "path": "Disconnect/Disconnect Main Menu.png", 
       "folder": "Disconnect", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 142902, 
+      "width": 1080, 
+      "height": 1920 
     } 
     , 
     { 
       "filename": "Disconnect Header.webp", 
       "path": "Disconnect/Disconnect Header.webp", 
       "folder": "Disconnect", 
-      "extension": ".webp" 
+      "extension": ".webp", 
+      "size": 45528, 
+      "width": 1896, 
+      "height": 301 
     } 
     , 
     { 
       "filename": "DisconnectPuzzleCover.webp", 
       "path": "Disconnect/DisconnectPuzzleCover.webp", 
       "folder": "Disconnect", 
-      "extension": ".webp" 
+      "extension": ".webp", 
+      "size": 30042, 
+      "width": 500, 
+      "height": 281 
     } 
     , 
     { 
       "filename": "Hitori 5x5 level select dark mode.png", 
       "path": "Hitori/Hitori 5x5 level select dark mode.png", 
       "folder": "Hitori", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 100896, 
+      "width": 1080, 
+      "height": 1920 
     } 
     , 
     { 
       "filename": "Hitori 8x8 level 307 dark mode.png", 
       "path": "Hitori/Hitori 8x8 level 307 dark mode.png", 
       "folder": "Hitori", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 111583, 
+      "width": 1080, 
+      "height": 1920 
     } 
     , 
     { 
       "filename": "Hitori 8x8 level 307 light mode.png", 
       "path": "Hitori/Hitori 8x8 level 307 light mode.png", 
       "folder": "Hitori", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 100717, 
+      "width": 1080, 
+      "height": 1920 
     } 
     , 
     { 
       "filename": "Hitori gameplay screen.png", 
       "path": "Hitori/Hitori gameplay screen.png", 
       "folder": "Hitori", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 113146, 
+      "width": 1080, 
+      "height": 1920 
     } 
     , 
     { 
       "filename": "Hitori Settings Menu.png", 
       "path": "Hitori/Hitori Settings Menu.png", 
       "folder": "Hitori", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 86509, 
+      "width": 1080, 
+      "height": 1920 
     } 
     , 
     { 
       "filename": "Hitori Victory Popup Level 1.png", 
       "path": "Hitori/Hitori Victory Popup Level 1.png", 
       "folder": "Hitori", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 84115, 
+      "width": 1080, 
+      "height": 1920 
     } 
     , 
     { 
       "filename": "HitoriCover.png", 
       "path": "Hitori/HitoriCover.png", 
       "folder": "Hitori", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 88339, 
+      "width": 630, 
+      "height": 500 
     } 
     , 
     { 
       "filename": "Hitori Header.webp", 
       "path": "Hitori/Hitori Header.webp", 
       "folder": "Hitori", 
-      "extension": ".webp" 
+      "extension": ".webp", 
+      "size": 61960, 
+      "width": 2000, 
+      "height": 500 
     } 
     , 
     { 
       "filename": "2000.png", 
       "path": "PlayMyLevel/2000.png", 
       "folder": "PlayMyLevel", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 30185, 
+      "width": 2000, 
+      "height": 393 
     } 
     , 
     { 
       "filename": "2000x500.png", 
       "path": "PlayMyLevel/2000x500.png", 
       "folder": "PlayMyLevel", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 27381, 
+      "width": 2000, 
+      "height": 500 
     } 
     , 
     { 
       "filename": "BigLevel.png", 
       "path": "PlayMyLevel/BigLevel.png", 
       "folder": "PlayMyLevel", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 156957, 
+      "width": 2560, 
+      "height": 1440 
     } 
     , 
     { 
       "filename": "Chilling.png", 
       "path": "PlayMyLevel/Chilling.png", 
       "folder": "PlayMyLevel", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 34847, 
+      "width": 1920, 
+      "height": 1080 
     } 
     , 
     { 
       "filename": "FrogNinjaInCastle.png", 
       "path": "PlayMyLevel/FrogNinjaInCastle.png", 
       "folder": "PlayMyLevel", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 79941, 
+      "width": 2560, 
+      "height": 1440 
     } 
     , 
     { 
       "filename": "GhostCastle.png", 
       "path": "PlayMyLevel/GhostCastle.png", 
       "folder": "PlayMyLevel", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 74441, 
+      "width": 2560, 
+      "height": 1440 
     } 
     , 
     { 
       "filename": "MenuGamepadSettings.png", 
       "path": "PlayMyLevel/MenuGamepadSettings.png", 
       "folder": "PlayMyLevel", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 66851, 
+      "width": 2560, 
+      "height": 1440 
     } 
     , 
     { 
       "filename": "MenuLevelSelect.png", 
       "path": "PlayMyLevel/MenuLevelSelect.png", 
       "folder": "PlayMyLevel", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 141960, 
+      "width": 2560, 
+      "height": 1440 
     } 
     , 
     { 
       "filename": "PlayMyLevelBanner.png", 
       "path": "PlayMyLevel/PlayMyLevelBanner.png", 
       "folder": "PlayMyLevel", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 98739, 
+      "width": 1200, 
+      "height": 450 
     } 
     , 
     { 
       "filename": "PlayMyLevelMenu.png", 
       "path": "PlayMyLevel/PlayMyLevelMenu.png", 
       "folder": "PlayMyLevel", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 20844, 
+      "width": 1366, 
+      "height": 768 
     } 
     , 
     { 
       "filename": "RocketLevel.png", 
       "path": "PlayMyLevel/RocketLevel.png", 
       "folder": "PlayMyLevel", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 36808, 
+      "width": 2560, 
+      "height": 1440 
     } 
     , 
     { 
       "filename": "SerratedDungeon.png", 
       "path": "PlayMyLevel/SerratedDungeon.png", 
       "folder": "PlayMyLevel", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 67882, 
+      "width": 2560, 
+      "height": 1440 
     } 
     , 
     { 
       "filename": "SwapAndCamera.png", 
       "path": "PlayMyLevel/SwapAndCamera.png", 
       "folder": "PlayMyLevel", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 26219, 
+      "width": 2560, 
+      "height": 1440 
     } 
     , 
     { 
       "filename": "SwapAndCamera2.png", 
       "path": "PlayMyLevel/SwapAndCamera2.png", 
       "folder": "PlayMyLevel", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 28784, 
+      "width": 2560, 
+      "height": 1440 
     } 
     , 
     { 
       "filename": "TutorialPC.png", 
       "path": "PlayMyLevel/TutorialPC.png", 
       "folder": "PlayMyLevel", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 24959, 
+      "width": 2560, 
+      "height": 1440 
     } 
     , 
     { 
       "filename": "Fireball.gif", 
       "path": "PlayMyLevel/Fireball.gif", 
       "folder": "PlayMyLevel", 
-      "extension": ".gif" 
+      "extension": ".gif", 
+      "size": 349561, 
+      "width": 663, 
+      "height": 168 
     } 
     , 
     { 
       "filename": "PowerUps.gif", 
       "path": "PlayMyLevel/PowerUps.gif", 
       "folder": "PlayMyLevel", 
-      "extension": ".gif" 
+      "extension": ".gif", 
+      "size": 247422, 
+      "width": 765, 
+      "height": 187 
     } 
     , 
     { 
       "filename": "SwapPositions.gif", 
       "path": "PlayMyLevel/SwapPositions.gif", 
       "folder": "PlayMyLevel", 
-      "extension": ".gif" 
+      "extension": ".gif", 
+      "size": 476780, 
+      "width": 765, 
+      "height": 187 
     } 
     , 
     { 
       "filename": "SwordSwing.gif", 
       "path": "PlayMyLevel/SwordSwing.gif", 
       "folder": "PlayMyLevel", 
-      "extension": ".gif" 
+      "extension": ".gif", 
+      "size": 96795, 
+      "width": 531, 
+      "height": 292 
     } 
     , 
     { 
       "filename": "Buy one card YAZA LevelUp Shop.png", 
       "path": "YAZA/Buy one card YAZA LevelUp Shop.png", 
       "folder": "YAZA", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 50774, 
+      "width": 670, 
+      "height": 405 
     } 
     , 
     { 
       "filename": "Card Collection YAZA.png", 
       "path": "YAZA/Card Collection YAZA.png", 
       "folder": "YAZA", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 393316, 
+      "width": 3840, 
+      "height": 2160 
     } 
     , 
     { 
       "filename": "Survival Challenge Zombies YAZA.png", 
       "path": "YAZA/Survival Challenge Zombies YAZA.png", 
       "folder": "YAZA", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 52462, 
+      "width": 579, 
+      "height": 527 
     } 
     , 
     { 
       "filename": "Upgrade Cards Ammo Zombie Shooter.png", 
       "path": "YAZA/Upgrade Cards Ammo Zombie Shooter.png", 
       "folder": "YAZA", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 50841, 
+      "width": 700, 
+      "height": 836 
     } 
     , 
     { 
       "filename": "Zombie Body Parts Collection.png", 
       "path": "YAZA/Zombie Body Parts Collection.png", 
       "folder": "YAZA", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 69742, 
+      "width": 1024, 
+      "height": 256 
     } 
     , 
     { 
       "filename": "Zombie Types Variants YAZA.png", 
       "path": "YAZA/Zombie Types Variants YAZA.png", 
       "folder": "YAZA", 
-      "extension": ".png" 
+      "extension": ".png", 
+      "size": 598946, 
+      "width": 1920, 
+      "height": 1080 
     } 
     , 
     { 
       "filename": "Card Shop Zombie Apocalypse.jpg", 
       "path": "YAZA/Card Shop Zombie Apocalypse.jpg", 
       "folder": "YAZA", 
-      "extension": ".jpg" 
+      "extension": ".jpg", 
+      "size": 192463, 
+      "width": 1600, 
+      "height": 900 
     } 
     , 
     { 
       "filename": "Death Screen And Mods YAZA Zombies.jpg", 
       "path": "YAZA/Death Screen And Mods YAZA Zombies.jpg", 
       "folder": "YAZA", 
-      "extension": ".jpg" 
+      "extension": ".jpg", 
+      "size": 220957, 
+      "width": 1600, 
+      "height": 900 
+    } 
+    , 
+    { 
+      "filename": "Floating Ammo Box Collectable.jpg", 
+      "path": "YAZA/Floating Ammo Box Collectable.jpg", 
+      "folder": "YAZA", 
+      "extension": ".jpg", 
+      "size": 33702, 
+      "width": 559, 
+      "height": 346 
     } 
     , 
     { 
       "filename": "Green Zombies Grenade Explosion.jpg", 
       "path": "YAZA/Green Zombies Grenade Explosion.jpg", 
       "folder": "YAZA", 
-      "extension": ".jpg" 
+      "extension": ".jpg", 
+      "size": 205201, 
+      "width": 1600, 
+      "height": 900 
     } 
     , 
     { 
       "filename": "Level Up Experience Gain Gameplay.jpg", 
       "path": "YAZA/Level Up Experience Gain Gameplay.jpg", 
       "folder": "YAZA", 
-      "extension": ".jpg" 
+      "extension": ".jpg", 
+      "size": 205574, 
+      "width": 1600, 
+      "height": 900 
     } 
     , 
     { 
       "filename": "Loading Screen and Map Industrial Road Zombies.jpg", 
       "path": "YAZA/Loading Screen and Map Industrial Road Zombies.jpg", 
       "folder": "YAZA", 
-      "extension": ".jpg" 
+      "extension": ".jpg", 
+      "size": 205115, 
+      "width": 1600, 
+      "height": 900 
     } 
     , 
     { 
       "filename": "Take Damage No Ammo Zombies.jpg", 
       "path": "YAZA/Take Damage No Ammo Zombies.jpg", 
       "folder": "YAZA", 
-      "extension": ".jpg" 
+      "extension": ".jpg", 
+      "size": 212441, 
+      "width": 1600, 
+      "height": 900 
     } 
     , 
     { 
       "filename": "Victory Screen Zombie FPS.jpg", 
       "path": "YAZA/Victory Screen Zombie FPS.jpg", 
       "folder": "YAZA", 
-      "extension": ".jpg" 
+      "extension": ".jpg", 
+      "size": 194383, 
+      "width": 1600, 
+      "height": 900 
     } 
     , 
     { 
       "filename": "Zombie Shooter Main Menu.jpg", 
       "path": "YAZA/Zombie Shooter Main Menu.jpg", 
       "folder": "YAZA", 
-      "extension": ".jpg" 
+      "extension": ".jpg", 
+      "size": 188947, 
+      "width": 1600, 
+      "height": 900 
     } 
     , 
     { 
       "filename": "Zombie Shooter Thumbnail.jpg", 
       "path": "YAZA/Zombie Shooter Thumbnail.jpg", 
       "folder": "YAZA", 
-      "extension": ".jpg" 
+      "extension": ".jpg", 
+      "size": 144015, 
+      "width": 1273, 
+      "height": 714 
     } 
     , 
     { 
       "filename": "Zombies Header Image YAZA.webp", 
       "path": "YAZA/Zombies Header Image YAZA.webp", 
       "folder": "YAZA", 
-      "extension": ".webp" 
+      "extension": ".webp", 
+      "size": 156018, 
+      "width": 2000, 
+      "height": 500 
     } 
   ] 
 } 

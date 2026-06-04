@@ -68,18 +68,6 @@
             background: rgba(255, 255, 255, 0.06);
         }
 
-        .file-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 8px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            flex-shrink: 0;
-        }
-
         .file-info {
             flex: 1;
             min-width: 0;
@@ -267,6 +255,12 @@
             word-break: break-word;
         }
 
+        .folder-card-meta {
+            font-size: 0.78rem;
+            color: #cbd5e1;
+            line-height: 1.35;
+        }
+
         .folder-card-path {
             font-size: 0.76rem;
             color: #94a3b8;
@@ -292,6 +286,10 @@
             padding: 40px;
             color: #f87171;
         }
+
+        a{
+            color: white;
+        }
     </style>
 </head>
 
@@ -305,12 +303,20 @@
         <div class="stats" id="stats"></div>
     </div>
     <script>
-        function getIcon(extension) {
-            const ext = extension.toLowerCase();
-            if (ext === '.gif') return '🎬';
-            if (ext === '.svg') return '📐';
-            if (ext === '.ico') return '⭐';
-            return '🖼️';
+        function formatFileSize(bytes) {
+            if (!Number.isFinite(bytes) || bytes < 0) return '0 B';
+
+            const units = ['B', 'KB', 'MB', 'GB'];
+            let size = bytes;
+            let unitIndex = 0;
+
+            while (size >= 1024 && unitIndex < units.length - 1) {
+                size /= 1024;
+                unitIndex += 1;
+            }
+
+            const precision = size >= 10 || unitIndex === 0 ? 0 : 1;
+            return `${size.toFixed(precision)} ${units[unitIndex]}`;
         }
 
         function copyToClipboard(btn, url) {
@@ -354,6 +360,8 @@
                         <thead>
                             <tr>
                                 <th>File</th>
+                                <th>Resolution</th>
+                                <th>Filesize</th>
                                 <th>URL</th>
                                 <th>Action</th>
                             </tr>
@@ -363,7 +371,9 @@
                                 const fullUrl = baseUrl + img.path;
                                 return `
                                     <tr>
-                                        <td>${escapeHtml(img.filename)}</td>
+                                        <td><a href="${escapeHtml(fullUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(img.filename)}</a></td>
+                                        <td>${escapeHtml(img.width)} × ${escapeHtml(img.height)}</td>
+                                        <td>${escapeHtml(formatFileSize(img.size))}</td>
                                         <td>${escapeHtml(fullUrl)}</td>
                                         <td><button class="copy-btn" type="button" data-url="${escapeHtml(fullUrl)}">Copy URL</button></td>
                                     </tr>`;
@@ -377,13 +387,14 @@
         function renderFolderGallery(folderImages, baseUrl) {
             return folderImages.map(img => {
                 const fullUrl = baseUrl + img.path;
-                const icon = getIcon(img.extension);
 
                 return `
                     <article class="folder-card">
-                        <div class="file-icon">${icon}</div>
                         <img src="${fullUrl}" alt="${escapeHtml(img.filename)}" loading="lazy" />
                         <div class="folder-card-name">${escapeHtml(img.filename)}</div>
+                        <div class="folder-card-meta">Size: ${escapeHtml(formatFileSize(img.size))}</div>
+                        <div class="folder-card-meta">Width: ${escapeHtml(img.width)} px</div>
+                        <div class="folder-card-meta">Height: ${escapeHtml(img.height)} px</div>
                         <div class="folder-card-path">${escapeHtml(fullUrl)}</div>
                         <button class="copy-btn" type="button" data-url="${escapeHtml(fullUrl)}">Copy URL</button>
                     </article>
