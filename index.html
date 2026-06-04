@@ -125,15 +125,153 @@
             background: linear-gradient(135deg, #10b981 0%, #059669 100%);
         }
 
-        .folder-header {
-            background: rgba(139, 92, 246, 0.1);
-            padding: 12px 24px;
+        .folder-section {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .folder-section:last-child {
+            border-bottom: none;
+        }
+
+        .folder-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            background: rgba(139, 92, 246, 0.08);
+            padding: 12px 18px;
+            border-bottom: 1px solid rgba(139, 92, 246, 0.18);
+        }
+
+        .folder-toggle,
+        .folder-load {
+            border: none;
+            color: #e9e9ff;
+            background: transparent;
+            cursor: pointer;
+            font: inherit;
+        }
+
+        .folder-toggle {
+            display: flex;
+            align-items: center;
+            gap: 8px;
             font-weight: 600;
-            color: #a78bfa;
-            font-size: 0.9rem;
-            letter-spacing: 0.5px;
+            color: #c4b5fd;
             text-transform: uppercase;
-            border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+            letter-spacing: 0.5px;
+            font-size: 0.88rem;
+        }
+
+        .folder-chevron {
+            display: inline-block;
+            transition: transform 0.2s ease;
+            font-size: 0.9rem;
+        }
+
+        .folder-section.collapsed .folder-chevron {
+            transform: rotate(0deg);
+        }
+
+        .folder-section:not(.collapsed) .folder-chevron {
+            transform: rotate(90deg);
+        }
+
+        .folder-load {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .folder-load:hover {
+            filter: brightness(1.05);
+        }
+
+        .folder-content {
+            display: block;
+            padding: 14px;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .folder-section.collapsed .folder-content {
+            display: none;
+        }
+
+        .folder-preview {
+            display: grid;
+            gap: 10px;
+        }
+
+        .folder-preview-table {
+            width: 100%;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 10px;
+            border: 1px solid rgba(148, 163, 184, 0.14);
+            font-size: 0.88rem;
+        }
+
+        .folder-preview-table th,
+        .folder-preview-table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .folder-preview-table th {
+            color: #c4b5fd;
+            background: rgba(139, 92, 246, 0.08);
+            font-weight: 600;
+        }
+
+        .folder-preview-table td {
+            color: #e5e7eb;
+        }
+
+        .folder-preview-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .folder-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 14px;
+        }
+
+        .folder-card {
+            background: rgba(15, 23, 42, 0.72);
+            border: 1px solid rgba(148, 163, 184, 0.18);
+            border-radius: 14px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .folder-card img {
+            width: 100%;
+            height: 140px;
+            object-fit: contain;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .folder-card-name {
+            font-size: 0.92rem;
+            color: #f3f4f6;
+            font-weight: 600;
+            word-break: break-word;
+        }
+
+        .folder-card-path {
+            font-size: 0.76rem;
+            color: #94a3b8;
+            font-family: 'Consolas', 'Monaco', monospace;
+            word-break: break-all;
         }
 
         .stats {
@@ -176,21 +314,91 @@
         }
 
         function copyToClipboard(btn, url) {
+            if (!navigator.clipboard || !navigator.clipboard.writeText) {
+                return;
+            }
+
             navigator.clipboard.writeText(url).then(function () {
+                const originalText = btn.textContent;
                 btn.textContent = 'Copied!';
                 btn.classList.add('copied');
                 setTimeout(function () {
-                    btn.textContent = 'Copy URL';
+                    btn.textContent = originalText;
                     btn.classList.remove('copied');
+                }, 2000);
+            }).catch(function () {
+                btn.textContent = 'Copy failed';
+                setTimeout(function () {
+                    btn.textContent = 'Copy URL';
                 }, 2000);
             });
         }
 
+        function escapeHtml(value) {
+            return String(value)
+                .replaceAll('&', '&amp;')
+                .replaceAll('<', '&lt;')
+                .replaceAll('>', '&gt;')
+                .replaceAll('"', '&quot;')
+                .replaceAll("'", '&#39;');
+        }
+
+        function makeFolderKey(folder) {
+            return String(folder || 'Root').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'root';
+        }
+
+        function renderFolderPreview(folderImages, baseUrl) {
+            return `
+                <div class="folder-preview">
+                    <table class="folder-preview-table">
+                        <thead>
+                            <tr>
+                                <th>File</th>
+                                <th>URL</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${folderImages.map(img => {
+                                const fullUrl = baseUrl + img.path;
+                                return `
+                                    <tr>
+                                        <td>${escapeHtml(img.filename)}</td>
+                                        <td>${escapeHtml(fullUrl)}</td>
+                                        <td><button class="copy-btn" type="button" data-url="${escapeHtml(fullUrl)}">Copy URL</button></td>
+                                    </tr>`;
+                            }).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            `;
+        }
+
+        function renderFolderGallery(folderImages, baseUrl) {
+            return folderImages.map(img => {
+                const fullUrl = baseUrl + img.path;
+                const icon = getIcon(img.extension);
+
+                return `
+                    <article class="folder-card">
+                        <div class="file-icon">${icon}</div>
+                        <img src="${fullUrl}" alt="${escapeHtml(img.filename)}" loading="lazy" />
+                        <div class="folder-card-name">${escapeHtml(img.filename)}</div>
+                        <div class="folder-card-path">${escapeHtml(fullUrl)}</div>
+                        <button class="copy-btn" type="button" data-url="${escapeHtml(fullUrl)}">Copy URL</button>
+                    </article>
+                `;
+            }).join('');
+        }
+
+        let currentData = null;
+        let loadedFolders = new Set();
+
         function renderImages(data) {
+            currentData = data;
             const fileList = document.getElementById('fileList');
             const stats = document.getElementById('stats');
 
-            // Group images by folder
             const folders = {};
             data.images.forEach(img => {
                 const folder = img.folder || 'Root';
@@ -198,38 +406,72 @@
                 folders[folder].push(img);
             });
 
-            let html = '';
-
-            // Sort folders (Root first, then alphabetically)
             const sortedFolders = Object.keys(folders).sort((a, b) => {
                 if (a === 'Root') return -1;
                 if (b === 'Root') return 1;
                 return a.localeCompare(b);
             });
 
+            let html = '';
+
             sortedFolders.forEach(folder => {
-                html += `<div class="folder-header">📁 ${folder}</div>`;
-
-                folders[folder].forEach(img => {
-                    const fullUrl = data.baseUrl + img.path;
-                    const icon = getIcon(img.extension);
-
-                    html += `
-                        <div class="file-item">
-                            <div class="file-icon">${icon}</div>
-                            <div class="file-info">
-                                <div class="file-name">${img.filename}</div>
-                                <div class="file-path">${fullUrl}</div>
-                            </div>
-                            <button class="copy-btn" onclick="copyToClipboard(this, '${fullUrl}')">Copy URL</button>
+                const folderKey = makeFolderKey(folder);
+                const folderImages = folders[folder];
+                html += `
+                    <section class="folder-section collapsed" data-folder="${folderKey}">
+                        <div class="folder-bar">
+                            <button class="folder-toggle" type="button" data-action="toggle" data-folder="${folderKey}">
+                                <span class="folder-chevron">▶</span>
+                                <span>📁 ${escapeHtml(folder)}</span>
+                            </button>
+                            <button class="folder-load" type="button" data-action="load" data-folder="${folderKey}">Load images</button>
                         </div>
-                    `;
-                });
+                        <div class="folder-content" id="folder-${folderKey}">${renderFolderPreview(folderImages, data.baseUrl)}</div>
+                    </section>
+                `;
             });
 
             fileList.innerHTML = html;
             stats.textContent = `Total: ${data.images.length} images`;
+            loadedFolders.clear();
         }
+
+        document.getElementById('fileList').addEventListener('click', function (event) {
+            const button = event.target.closest('button[data-action], button[data-url]');
+            if (!button) return;
+
+            if (button.hasAttribute('data-url')) {
+                copyToClipboard(button, button.getAttribute('data-url'));
+                return;
+            }
+
+            const action = button.getAttribute('data-action');
+            const folderKey = button.getAttribute('data-folder');
+            const section = document.querySelector(`.folder-section[data-folder="${folderKey}"]`);
+
+            if (!section || !currentData) return;
+
+            if (action === 'toggle') {
+                section.classList.toggle('collapsed');
+                return;
+            }
+
+            if (action === 'load') {
+                const folderName = Object.keys(currentData.images.reduce((acc, img) => {
+                    const key = img.folder || 'Root';
+                    acc[key] = true;
+                    return acc;
+                }, {})).find(name => makeFolderKey(name) === folderKey) || 'Root';
+                const folderImages = currentData.images.filter(img => (img.folder || 'Root') === folderName);
+                const content = document.getElementById('folder-' + folderKey);
+
+                section.classList.remove('collapsed');
+                if (!loadedFolders.has(folderKey)) {
+                    content.innerHTML = `<div class="folder-grid">${renderFolderGallery(folderImages, currentData.baseUrl)}</div>`;
+                    loadedFolders.add(folderKey);
+                }
+            }
+        });
 
         // Load the JSON data
         fetch('images.json')

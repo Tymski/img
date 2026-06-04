@@ -455,5 +455,103 @@
       "folder": "PlayMyLevel", 
       "extension": ".gif" 
     } 
+    , 
+    { 
+      "filename": "Buy one card YAZA LevelUp Shop.png", 
+      "path": "YAZA/Buy one card YAZA LevelUp Shop.png", 
+      "folder": "YAZA", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Card Collection YAZA.png", 
+      "path": "YAZA/Card Collection YAZA.png", 
+      "folder": "YAZA", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Survival Challenge Zombies YAZA.png", 
+      "path": "YAZA/Survival Challenge Zombies YAZA.png", 
+      "folder": "YAZA", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Upgrade Cards Ammo Zombie Shooter.png", 
+      "path": "YAZA/Upgrade Cards Ammo Zombie Shooter.png", 
+      "folder": "YAZA", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Zombie Body Parts Collection.png", 
+      "path": "YAZA/Zombie Body Parts Collection.png", 
+      "folder": "YAZA", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Zombie Types Variants YAZA.png", 
+      "path": "YAZA/Zombie Types Variants YAZA.png", 
+      "folder": "YAZA", 
+      "extension": ".png" 
+    } 
+    , 
+    { 
+      "filename": "Card Shop Zombie Apocalypse.jpg", 
+      "path": "YAZA/Card Shop Zombie Apocalypse.jpg", 
+      "folder": "YAZA", 
+      "extension": ".jpg" 
+    } 
+    , 
+    { 
+      "filename": "Death Screen And Mods YAZA Zombies.jpg", 
+      "path": "YAZA/Death Screen And Mods YAZA Zombies.jpg", 
+      "folder": "YAZA", 
+      "extension": ".jpg" 
+    } 
+    , 
+    { 
+      "filename": "Green Zombies Grenade Explosion.jpg", 
+      "path": "YAZA/Green Zombies Grenade Explosion.jpg", 
+      "folder": "YAZA", 
+      "extension": ".jpg" 
+    } 
+    , 
+    { 
+      "filename": "Loading Screen and Map Industrial Road Zombies.jpg", 
+      "path": "YAZA/Loading Screen and Map Industrial Road Zombies.jpg", 
+      "folder": "YAZA", 
+      "extension": ".jpg" 
+    } 
+    , 
+    { 
+      "filename": "Take Damage No Ammo Zombies.jpg", 
+      "path": "YAZA/Take Damage No Ammo Zombies.jpg", 
+      "folder": "YAZA", 
+      "extension": ".jpg" 
+    } 
+    , 
+    { 
+      "filename": "Victory Screen Zombie FPS.jpg", 
+      "path": "YAZA/Victory Screen Zombie FPS.jpg", 
+      "folder": "YAZA", 
+      "extension": ".jpg" 
+    } 
+    , 
+    { 
+      "filename": "Zombie Shooter Main Menu.jpg", 
+      "path": "YAZA/Zombie Shooter Main Menu.jpg", 
+      "folder": "YAZA", 
+      "extension": ".jpg" 
+    } 
+    , 
+    { 
+      "filename": "Zombies Header Image YAZA.webp", 
+      "path": "YAZA/Zombies Header Image YAZA.webp", 
+      "folder": "YAZA", 
+      "extension": ".webp" 
+    } 
   ] 
 } 
